@@ -30,5 +30,36 @@
     
  # GUI Img
 <div id="header" align="center">
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true" width="300"/>
+ <p>1-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>2-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>3-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>4-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>4-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>5-</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+</div>
+
+<div id="header" align="center">
+  <p>Output</p>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
 </div>
