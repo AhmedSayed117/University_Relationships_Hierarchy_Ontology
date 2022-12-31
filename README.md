@@ -29,4 +29,4 @@
     5. Get all faculties of a university.
     
  # GUI Img
-    ![alt text](https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png)
+    ![alt text](https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true)
