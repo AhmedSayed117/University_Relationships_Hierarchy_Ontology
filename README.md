@@ -29,37 +29,32 @@
     5. Get all faculties of a university.
     
  # GUI Img
+# <p>1-</p>
 <div id="header" align="center">
- <p>1-</p>
   <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
 </div>
 
+# <p>2-</p>
 <div id="header" align="center">
-  <p>2-</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/2.png?raw=true"/>
 </div>
 
+# <p>3-</p>
 <div id="header" align="center">
-  <p>3-</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/3.png?raw=true"/>
 </div>
 
+# <p>4-</p>
 <div id="header" align="center">
-  <p>4-</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/4.png?raw=true"/>
 </div>
 
+# <p>5-</p>
 <div id="header" align="center">
-  <p>4-</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/5.png?raw=true"/>
 </div>
 
+# <p>Output-</p>
 <div id="header" align="center">
-  <p>5-</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
-</div>
-
-<div id="header" align="center">
-  <p>Output</p>
-  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/1.png?raw=true"/>
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/output.png?raw=true"/>
 </div>
