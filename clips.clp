@@ -2,26 +2,30 @@
 	(is-a USER)
 	(role concrete)
 	(multislot Name (type STRING))
-	(slot Location (propagation no-inherit) (type STRING)))
+	(slot Location (propagation no-inherit) (type STRING))
+)
 	
 (defclass Faculty
 	(is-a University)
 	(role concrete)
 	(slot Location (propagation no-inherit) (type STRING))
-	(slot university (type STRING)))
+	(slot university (type STRING))
+)
 
 (defclass Department
 	(is-a Faculty)
 	(role concrete)
 	(slot Name (allowed-values CS IT AI IT DS))
 	(slot min_GPA (type NUMBER))
-	(slot Student_Num (type NUMBER)))
+	(slot Student_Num (type NUMBER))
+)
 	
 (defclass Program
 	(is-a Faculty)
 	(role concrete)
 	(slot Name (allowed-values CS IT AI IT DS General))
-	(slot Student_Num (type NUMBER)))
+	(slot Student_Num (type NUMBER))
+)
 
 (defclass Course
 	(is-a Faculty)
@@ -32,47 +36,57 @@
 (defclass Academic_staff
 	(is-a Faculty)
 	(role concrete)
-	(slot Academic_Num (type NUMBER)))
+	(slot Academic_Num (type NUMBER))
+)
 	
 (defclass Exams
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Course_work
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Thesis
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Lecture_hall
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Library
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Lab_room
 	(is-a Faculty)
-	(role concrete))
+	(role concrete)
+)
 	
 (defclass Lecturer
 	(is-a Faculty)
 	(role concrete)
-	(slot FacultyNameL (type STRING)))
+	(slot FacultyNameL (type STRING))
+)
 
 (defclass TA
 	(is-a Faculty)
 	(role concrete)
-	(slot depName (type SYMBOL)))
+	(slot depName (type SYMBOL))
+)
 	
 (defclass Student
 	(is-a Faculty)
 	(role concrete)
 	(multislot courses (type STRING))
-	(slot GPA (type NUMBER)))
+	(slot GPA (type NUMBER))
+)
 	
 ;definstances	
 (definstances University 
@@ -82,7 +96,8 @@
 	
 	(U2 of University 
 	(Name "Helwan University") 
-	(Location "Helwan/Cairo")))
+	(Location "Helwan/Cairo"))
+)
 
 (definstances Faculty 
 	(F1 of Faculty 
@@ -98,7 +113,8 @@
 	(F3 of Faculty 
 	(Name "Engennering faculty") 
 	(Location "Giza")
-	(university "Cairo University")))
+	(university "Cairo University"))
+)
 	
 (definstances TA 
 	(T1 of TA 
@@ -115,7 +131,8 @@
 	
 	(T4 of TA 
 	(Name "Khaled Ashraf")
-	(depName CS)))
+	(depName CS))
+)
 	
 (definstances Department 
 	(D1 of Department 
@@ -126,7 +143,8 @@
 	(D2 of Department 
 	(Name IT) 
 	(min_GPA 2.2) 
-	(Student_Num 100)))
+	(Student_Num 100))
+)
 	
 (definstances Student 
 	(S1 of Student 
@@ -142,7 +160,8 @@
 	(S3 of Student 
 	(Name Manar) 
 	(GPA 3.7) 
-	(courses OOP Math3)))
+	(courses OOP Math3))
+)
 	
 (definstances Lecturer 
 	(L1 of Lecturer 
@@ -155,7 +174,8 @@
 	
 	(L3 of Lecturer 
 	(Name Dr:Manar) 
-	(FacultyNameL "Engennering faculty")))
+	(FacultyNameL "Engennering faculty"))
+)
 	
 (definstances Course
 	(c1 of Course 
@@ -181,7 +201,8 @@
 	(c5 of Course 
 	(Name Math3)
 	(Student_Num 202)
-	(facultyName "Engennering faculty")))
+	(facultyName "Engennering faculty"))
+)
 	
 ;all TAs belonging to a department.
 (defrule print-TAs-department
@@ -189,7 +210,8 @@
 	?y <- (dep ?d)
 	(object (name ?name) (depName ?d))
 =>
-	(send ?name printNames))
+	(send ?name printNames)
+)
 	
 ;all Courses belonging to a Student.
 (defrule print-Courses-Student
@@ -198,7 +220,8 @@
 	(object (name ?name) (Name ?d) (courses $?obj))
 =>
 	(retract ?y)
-	(send ?name printCourses))
+	(send ?name printCourses)
+)
 	
 ;all Courses belonging to a Faculty.
 (defrule print-Courses-Faculty
@@ -206,7 +229,8 @@
 	?y <- (Fac ?d)
 	(object (name ?name) (facultyName ?d))
 =>
-	(send ?name printCoursesF))
+	(send ?name printCoursesF)
+)
 	
 ;all Lecturer belonging to a Faculty.
 (defrule print-Lecturer-Faculty
@@ -214,7 +238,8 @@
 	?y <- (FacL ?d)
 	(object (name ?name) (FacultyNameL ?d) (is-a Lecturer))
 =>
-	(send ?name printLecturer))
+	(send ?name printLecturer)
+)
 	
 ;all Lecturer belonging to a Faculty.
 (defrule print-faculties-university
@@ -222,7 +247,8 @@
 	?y <- (University ?U)
 	(object (name ?name) (university ?U) (is-a Faculty))
 =>
-	(send ?name printFaculty))
+	(send ?name printFaculty)
+)
 	
 (defmessage-handler TA printNames ()
 	(bind ?Names (send ?self get-Name))
@@ -230,32 +256,37 @@
 	(open "TEMP/GUI1.txt" data "a")
 	(printout t ?Names crlf)
 	(printout data ?Names crlf)
-	(close data))
+	(close data)
+)
 
 (defmessage-handler Student printCourses ()
 	(bind ?courses (send ?self get-courses))
 	(open "TEMP/GUI2.txt" data "a")
 	(printout t ?courses crlf)
 	(printout data ?courses crlf)
-	(close data))
+	(close data)
+)
 
 (defmessage-handler Course printCoursesF ()
 	(bind ?Names (send ?self get-Name))
 	(open "TEMP/GUI3.txt" data "a")
 	(printout t ?Names crlf)
 	(printout data ?Names crlf)
-	(close data))
+	(close data)
+)
 
 (defmessage-handler Lecturer printLecturer ()
 	(bind ?Names (send ?self get-Name))
 	(open "TEMP/GUI4.txt" data "a")
 	(printout t ?Names crlf)
 	(printout data ?Names crlf)
-	(close data))	
+	(close data)
+)	
 
 (defmessage-handler Faculty printFaculty ()
 	(bind ?Names (send ?self get-Name))
 	(open "TEMP/GUI5.txt" data "a")
 	(printout t ?Names crlf)
 	(printout data ?Names crlf)
-	(close data))
+	(close data)
+)

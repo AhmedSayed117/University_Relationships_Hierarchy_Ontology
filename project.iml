@@ -10,5 +10,6 @@
     <orderEntry type="library" name="CLIPSJNI1" level="application" />
     <orderEntry type="library" name="CLIPSJNI2" level="application" />
     <orderEntry type="library" name="CLIPSJNI3" level="application" />
+    <orderEntry type="library" name="CLIPSJNI" level="project" />
   </component>
 </module>
