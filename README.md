@@ -58,3 +58,9 @@
 <div id="header" align="center">
   <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/Gui%20img/output.png?raw=true"/>
 </div>
+
+
+# <p>Design Hierarchy:</p>
+<div id="header" align="center">
+  <img src="https://github.com/AhmedSayed117/University_Relationships_Hierarchy_Ontology/blob/main/prot%C3%A9g%C3%A9/SystemDesign.jpg?raw=true"/>
+</div>
