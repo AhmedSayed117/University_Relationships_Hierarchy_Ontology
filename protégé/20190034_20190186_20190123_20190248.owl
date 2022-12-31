@@ -333,7 +333,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#C1">
         <rdf:type rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#Course"/>
-        <offers rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
+        <offered_by rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
         <course_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS123</course_code>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOP</name>
     </owl:NamedIndividual>
@@ -344,7 +344,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#C2">
         <rdf:type rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#Course"/>
-        <offers rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
+        <offered_by rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
         <course_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS112</course_code>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithms</name>
     </owl:NamedIndividual>
@@ -355,7 +355,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#C3">
         <rdf:type rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#Course"/>
-        <offers rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
+        <offered_by rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F1"/>
         <course_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS113</course_code>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c++</name>
     </owl:NamedIndividual>
@@ -366,7 +366,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#C4">
         <rdf:type rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#Course"/>
-        <offers rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F3"/>
+        <offered_by rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F3"/>
         <course_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS321</course_code>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataBase</name>
     </owl:NamedIndividual>
@@ -377,7 +377,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#C5">
         <rdf:type rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#Course"/>
-        <offers rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F3"/>
+        <offered_by rdf:resource="http://www.semanticweb.org/midos/ontologies/2022/11/untitled-ontology-14#F3"/>
         <course_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS521</course_code>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Math3</name>
     </owl:NamedIndividual>
